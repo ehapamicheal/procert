@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- google front cdn -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- swiper js bundle css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="overall_container-t">
+        <section class="testimonial_area">
+            <div class="testimonial_skip_box">
+                <a href="ask-bot.html">Skip</a>            
+            </div>
+
+            <div class="testimonial_wrapper">
+                <div class="testimonial swiper">
+                    <div class="testimonial_card_group swiper-wrapper">
+                        <div class="testimonial_card swiper-slide">
+                            <img class="roobo_image" src="assets/images/Robot Image.png" alt="Robot image 1">
+                            <div class="unlock_text_box">
+                                <h1>Unlock the Power Of ProCert AI</h1>
+                                <p>Chat with the smartest AI Future. Experience power of AI with us</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial_card swiper-slide">
+                            <img class="roobo_image" src="assets/images/Robot Img.png" alt="Robot image 2">
+                            <div class="unlock_text_box">
+                                <h1>Unlock the Power Of ProCert AI</h1>
+                                <p>Chat with the smartest AI Future. Experience power of AI with us</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial_card swiper-slide">
+                            <img class="roobo_image" src="assets/images/Robo Image.png" alt="Robot image 3">
+                            <div class="unlock_text_box">
+                                <h1>Unlock the Power Of ProCert AI</h1>
+                                <p>Chat with Procert AI for the best Educational and Visa Process Consultation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="pagination_box">
+                        <div class="pag">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div> -->
+        
+                    <!-- Navigator -->
+                    <div class="testimonial_navigator">
+                        <div class="testimonial_arrow_box">
+                            <button class="btn_prev" id="left-arrow">
+                                <span class="material-symbols-outlined">
+                                    arrow_back
+                                </span>
+                            </button>
+                            <button class="btn_next" id="right-arrow">
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="indicator">
+                        <div class="indicator_main">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- swiper js cdn script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SWIPER CODE -->
+    <script>
+        const firstSwiper = new Swiper('.testimonial', {
+            loop: true,
+            speed: 400,
+            spaceBetween: 25,
+            navigation: {
+                nextEl: ".btn_next",
+                prevEl: ".btn_prev"
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            
+        });
+    </script>
+
+    
+
+
+
+</body>
+</html>

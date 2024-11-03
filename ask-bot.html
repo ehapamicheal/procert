@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Bot</title>
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="ask_bot_overall_container">
+        <div class="ask_bot_main">
+            <div class="ask_bot_top-bar">
+                <a href="history.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6283_13178)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29559 11.2932C8.10812 11.4807 8.0028 11.735 8.0028 12.0002C8.0028 12.2653 8.10812 12.5197 8.29559 12.7072L13.9526 18.3642C14.0448 18.4597 14.1552 18.5359 14.2772 18.5883C14.3992 18.6407 14.5304 18.6683 14.6632 18.6694C14.796 18.6706 14.9276 18.6453 15.0505 18.595C15.1734 18.5447 15.2851 18.4705 15.379 18.3766C15.4729 18.2827 15.5471 18.171 15.5974 18.0481C15.6477 17.9252 15.673 17.7936 15.6718 17.6608C15.6707 17.528 15.6431 17.3968 15.5907 17.2748C15.5383 17.1528 15.4621 17.0424 15.3666 16.9502L10.4166 12.0002L15.3666 7.05018C15.5487 6.86158 15.6495 6.60898 15.6473 6.34678C15.645 6.08458 15.5398 5.83377 15.3544 5.64836C15.169 5.46295 14.9182 5.35778 14.656 5.35551C14.3938 5.35323 14.1412 5.45402 13.9526 5.63618L8.29559 11.2932Z" fill="#000000"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_6283_13178">
+                        <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 24 0)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <div class="ask_bot">
+                    <svg class="option_dot" width="40" height="40" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="47" height="47" fill="white"/>
+                        <path d="M23.5 25.4584C24.5815 25.4584 25.4583 24.5816 25.4583 23.5C25.4583 22.4185 24.5815 21.5417 23.5 21.5417C22.4184 21.5417 21.5416 22.4185 21.5416 23.5C21.5416 24.5816 22.4184 25.4584 23.5 25.4584Z" stroke="#494949" stroke-width="3.91667" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M37.2083 25.4584C38.2899 25.4584 39.1666 24.5816 39.1666 23.5C39.1666 22.4185 38.2899 21.5417 37.2083 21.5417C36.1268 21.5417 35.25 22.4185 35.25 23.5C35.25 24.5816 36.1268 25.4584 37.2083 25.4584Z" stroke="#494949" stroke-width="3.91667" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.79165 25.4584C10.8732 25.4584 11.75 24.5816 11.75 23.5C11.75 22.4185 10.8732 21.5417 9.79165 21.5417C8.71009 21.5417 7.83331 22.4185 7.83331 23.5C7.83331 24.5816 8.71009 25.4584 9.79165 25.4584Z" stroke="#494949" stroke-width="3.91667" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </div>
+
+                <div class="delete_conte">
+                    <div class="delete_main">
+                        <img src="assets/svg/delete-10400.svg" alt="delete svg">
+                        <span>Delete Chat</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ask_bot_content">
+                <img src="assets/images/Black Gold Simple Body and Hair Treatment Logo_20240528_205011_0002 3.png" alt="Logo" class="logo">
+                <h1>HOW CAN I HELP YOU TODAY?</h1>                
+            </div>
+
+            <!-- chat area -->
+            <div class="chatarea_container">
+                <!-- <div class="chatarea_main_box">
+                    
+                </div>    -->
+            </div>
+
+            <div class="send_message_box">
+                <form action="">
+                    <div class="inputs-box">
+                        <input type="text" placeholder="Send message" class="send_message_input">
+                        <button type="button" class="inbox-send-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.1249 9.9927C18.1255 10.2154 18.0665 10.4342 17.9542 10.6265C17.8418 10.8188 17.6801 10.9776 17.4858 11.0864L4.36787 18.5872C4.17939 18.6941 3.96656 18.7506 3.7499 18.7513C3.55009 18.7509 3.35329 18.7026 3.176 18.6104C2.9987 18.5183 2.84608 18.385 2.73093 18.2217C2.61577 18.0584 2.54143 17.8699 2.51415 17.672C2.48687 17.474 2.50743 17.2725 2.57412 17.0841L4.71083 10.838C4.73189 10.7762 4.77177 10.7226 4.82487 10.6846C4.87798 10.6466 4.94164 10.6262 5.00693 10.6263H10.6249C10.7106 10.6265 10.7954 10.609 10.874 10.5751C10.9527 10.5411 11.0235 10.4913 11.0821 10.4288C11.1408 10.3663 11.1859 10.2925 11.2148 10.2118C11.2436 10.1311 11.2556 10.0454 11.2499 9.95988C11.2357 9.79917 11.1614 9.64974 11.0417 9.54152C10.922 9.43331 10.7659 9.37429 10.6046 9.37629H5.0124C4.94721 9.37641 4.88361 9.35613 4.83052 9.31831C4.77743 9.28049 4.73749 9.227 4.7163 9.16535L2.57255 2.91535C2.48907 2.67586 2.48041 2.41664 2.54774 2.17211C2.61506 1.92759 2.75517 1.70932 2.94947 1.54631C3.14376 1.38329 3.38305 1.28324 3.63556 1.25943C3.88806 1.23562 4.14183 1.28918 4.36318 1.41301L17.4882 8.90442C17.6812 9.01311 17.8419 9.17117 17.9538 9.36239C18.0657 9.55362 18.1247 9.77115 18.1249 9.9927Z" fill="#DDDDE4"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        
+        </div>
+    </div>
+
+  
+  
+
+   
+
+    <!-- GET THE VALUE FROM THE INPUT INTO THE RESPONSE AREA AND FUNCTIONALITY FOR THE COPY ICON ICON, REGENERATE AND SHARE ICON DROPDOWN -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sendBtn = document.querySelector(".inbox-send-btn");
+            const sendMessageInput = document.querySelector(".send_message_input");
+            const askBotContent = document.querySelector(".ask_bot_content");
+            const chatareaContainer = document.querySelector(".chatarea_container");
+
+            sendBtn.addEventListener("click", function() {
+                const message = sendMessageInput.value.trim();
+
+                if (message) {
+                    askBotContent.style.display = "none";
+                    chatareaContainer.style.display = "block";
+
+                    const newMessageBox = document.createElement("div");
+                    newMessageBox.className = "chatarea_main_box";
+                    newMessageBox.innerHTML = `
+                        <div class="chatarea_textbox1">
+                            <img src="assets/images/Rectangle 4181.png" alt="chat logo">
+                            <p class="chatarea_textbox1-text">${message}</p>
+                            <img class="image_2" src="assets/svg/Edit Logo.svg" alt="edit logo">
+                            <div class="edit_popup_cont">
+                                <span>Edit</span>
+                            </div>
+                        </div>
+                        <div class="response_box">
+                            <div class="response_chat">
+                                <img src="assets/images/Black Gold Simple Body and Hair Treatment Logo_20240528_205011_0002 2.png" alt="response image">
+                                <div class="share_copy_box">
+                                    <div class="regenerate-svg-box">
+                                        <img src="assets/svg/convert-3209.svg" alt="reload svg">
+                                    </div>
+                                    <div class="copy_image_box">
+                                        <img class="copy_image" src="assets/svg/Icon=copy, Component=Additional Icons.svg" alt="copy svg">
+                                    </div>
+                                    <div class="share_image_box">
+                                        <img class="share_img" src="assets/svg/Icon=share-alt, Component=Additional Icons.svg" alt="share svg">
+                                        <div class="share_dropdown_contain">
+                                            <div class="share_dropdown_main">
+                                                <a href="#">
+                                                    <img src="assets/svg/Facebook - Original.svg" alt="facebook svg">
+                                                    <span>Facebook</span>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/svg/Instagram - Original.svg" alt="instagram svg">
+                                                    <span>Instagram</span>
+                                                </a>
+                                                <a href="#">
+                                                    <img class="twitter_svg" src="assets/svg/twitter-x-logo-blue-outline-20847.svg" alt="twitter svg">
+                                                    <span>Twitter</span>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/svg/YouTube - Original.svg" alt="youtube svg">
+                                                    <span>Youtube</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regenerate-svg_p_box">
+                                    <span>Regenerate</span>
+                                </div>
+                                <div class="regenerate-copy_p_box">
+                                    <span>Copy</span>
+                                </div>
+                            </div>
+                            <div class="response_text_box">
+                                <p class="answer_chat">It is a private Pentecostal Christian university located in Ota, Nigeria. The university is organised into four colleges: business and social sciences; leadership and development studies; engineering, and science and technology.</p>
+                            </div>
+                        </div>
+                    `;
+
+                    // chatareaContainer.insertBefore(newMessageBox, chatareaContainer.lastChild);
+                    chatareaContainer.appendChild(newMessageBox);
+                    sendMessageInput.value = "";
+
+                    // Attach hover, edit, copy, and share events for the new elements
+                    attachHoverEvents(newMessageBox);
+                    attachEditEvents(newMessageBox);
+                    attachCopyEvents(newMessageBox);
+                    attachShareEvents(newMessageBox);
+
+                    // Scroll to the bottom of the chat area and ensure the latest message is in view
+                    chatareaContainer.scrollTop = chatareaContainer.scrollHeight;
+                }
+            });
+
+            function attachHoverEvents(chatBox) {
+                const svgBox = chatBox.querySelector('.regenerate-svg-box');
+                const svgPopupBox = chatBox.querySelector('.regenerate-svg_p_box');
+                const copyImageBox = chatBox.querySelector('.copy_image_box');
+                const copyPopupBox = chatBox.querySelector('.regenerate-copy_p_box');
+
+                if (svgBox && svgPopupBox) {
+                    svgBox.addEventListener('mouseenter', () => {
+                        svgPopupBox.style.display = 'block';
+                    });
+                    svgBox.addEventListener('mouseleave', () => {
+                        svgPopupBox.style.display = 'none';
+                    });
+                }
+
+                if (copyImageBox && copyPopupBox) {
+                    copyImageBox.addEventListener('mouseenter', () => {
+                        copyPopupBox.style.display = 'block';
+                    });
+                    copyImageBox.addEventListener('mouseleave', () => {
+                        copyPopupBox.style.display = 'none';
+                    });
+                }
+            }
+
+            function attachEditEvents(chatBox) {
+                const editIcon = chatBox.querySelector(".image_2");
+                const textboxText = chatBox.querySelector(".chatarea_textbox1-text");
+
+                if (editIcon && textboxText) {
+                    editIcon.addEventListener("click", function() {
+                        if (textboxText.contentEditable === "true") {
+                            textboxText.contentEditable = "false";
+                            textboxText.classList.remove("editable");
+                        } else {
+                            textboxText.contentEditable = "true";
+                            textboxText.classList.add("editable");
+                            textboxText.focus();
+                        }
+                    });
+                }
+            }
+
+            function attachCopyEvents(chatBox) {
+                const copyBoxes = chatBox.querySelectorAll('.copy_image_box');
+                copyBoxes.forEach(copyBox => {
+                    copyBox.addEventListener('click', () => {
+                        const answerChat = chatBox.querySelector('.answer_chat');
+                        if (answerChat) {
+                            navigator.clipboard.writeText(answerChat.textContent)
+                                .then(() => console.log('Text copied to clipboard'))
+                                .catch(err => console.error('Error copying text: ', err));
+                        }
+                    });
+                });
+            }
+
+            function attachShareEvents(chatBox) {
+                const shareImages = chatBox.querySelectorAll(".share_img");
+                const shareDropdowns = chatBox.querySelectorAll(".share_dropdown_contain");
+
+                shareImages.forEach((shareImg, index) => {
+                    const shareDropdown = shareDropdowns[index];
+
+                    shareImg.addEventListener("click", function(event) {
+                        event.stopPropagation();
+                        shareDropdown.classList.toggle("show");
+                    });
+
+                    document.addEventListener("click", function(event) {
+                        if (!shareDropdown.contains(event.target) && event.target !== shareImg) {
+                            shareDropdown.classList.remove("show");
+                        }
+                    });
+                });
+            }
+
+            // Attach events to any existing chat boxes on load
+            const chatAreaBoxes = document.querySelectorAll('.chatarea_main_box');
+            chatAreaBoxes.forEach((chatBox) => {
+                attachHoverEvents(chatBox);
+                attachEditEvents(chatBox);
+                attachCopyEvents(chatBox);
+                attachShareEvents(chatBox);
+            });
+        });
+    </script>
+
+
+    <!-- OPENS AND CLOSE THE DELETE OPTON CONTAINER -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const optionDot = document.querySelector('.option_dot');
+            const deleteConte = document.querySelector('.delete_conte');
+
+            optionDot.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (deleteConte.style.display === 'block') {
+                    deleteConte.style.display = 'none';
+                } else {
+                    deleteConte.style.display = 'block';
+                }
+            });
+
+            document.addEventListener('click', () => {
+                if (deleteConte.style.display === 'block') {
+                    deleteConte.style.display = 'none';
+                }
+            });
+
+            deleteConte.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        });
+
+    </script>
+
+
+</body>
+</html>
